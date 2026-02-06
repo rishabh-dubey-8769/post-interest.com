@@ -1,0 +1,92 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body,#root {
+  height: 100%;
+  width: 100%;
+}
+html{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+  background-color: #a0f2f5;
+  width:100%;
+  padding:30px;
+}
+.create-post-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.create-post-section form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top:40%;
+  height: 20%;
+  width: 80%;
+  max-width: 500px;
+  gap:20px;
+  background-color: #f59be9;
+  padding:20px;
+  border-radius: 8px;
+  box-shadow: 4px 6px rgb(109, 48, 96);
+}
+.create-post-section input,textarea{
+  width: 70%;
+  border-radius: 6px;
+  border:1px solid green
+}
+button{
+  background-color: rgb(64, 229, 31);
+  border-radius: 7px;
+  width: 20%;
+}
+button:hover{
+  background-color: yellow;
+}
+.feed-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap:20px;
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(177, 231, 120);
+  padding:20px;
+}
+.feed-heading{
+  background-color: rgb(245, 192, 46);
+  width: 100%;
+  text-align: center;
+  padding:14px;
+}
+.post-card { 
+  background-color: white; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow:  2px 4px black;
+  width: 400px;
+  margin-bottom: 20px; 
+} 
+.post-card h3{
+  margin-bottom: 10px;
+}
+.post-card img{
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.btn-footer,.btn-top{
+  margin-top:10%;
+  width: 100px;
+}

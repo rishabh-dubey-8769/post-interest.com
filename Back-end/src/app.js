@@ -24,10 +24,11 @@ app.post('/create-post',upload.single("image"),async(req,res)=>{
 
 // 2: GET API :->
 app.get('/posts',async(req,res)=>{
-    const posts=await postModel.find()
+    const posts=await postModel.find().sort({ createdAt: -1 })
     res.status(200).json({
         message:"Posts fetched successfully.",
         posts
     })
 })
+
 module.exports=app

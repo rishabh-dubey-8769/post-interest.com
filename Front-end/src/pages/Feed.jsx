@@ -13,7 +13,7 @@ const Feed = () => {
     
     useEffect(()=>{
 
-        axios.get("http://localhost:3000/posts")
+        axios.get("https://post-interest-com.onrender.com/posts")
         .then((res)=>{
 
             setPosts(res.data.posts)
@@ -55,4 +55,5 @@ const Feed = () => {
 }
 
 export default Feed
+
 

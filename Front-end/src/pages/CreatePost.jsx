@@ -7,7 +7,7 @@ const CreatePost = () => {
   const handleSubmit=async(e)=>{
     e.preventDefault()
     const formData=new FormData(e.target)
-    axios.post("https://post-interest-com.onrender.com/create-post",formData)
+    axios.post("http://localhost:3000/create-post",formData)
     .then((res)=>{
       navigate("/feed")
     })
@@ -22,13 +22,12 @@ const CreatePost = () => {
         <form onSubmit={handleSubmit} >
             <input type="file" name="image" accept="image/*"  />
             <input type="text" name="caption" placeholder='Enter caption' required />
-            <button type="submit" >Submit</button>
+            <Link to="/feed" ><button type="submit" className='btn-footer'>Submit</button></Link>
         </form>
         <Link to="/feed" ><button className='btn-footer'>See all Posts</button></Link>
     </section>
     
   )
 }
-
 
 export default CreatePost

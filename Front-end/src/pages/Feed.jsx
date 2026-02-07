@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import axios from "axios"
 import { Link } from 'react-router-dom'
-
+alert("Wait for 5-10 seconds & kindly refresh your page if your new post is not visible.")
 const Feed = () => {
 
     const [ posts, setPosts ] = useState([
@@ -52,4 +52,5 @@ const Feed = () => {
 
 
 export default Feed
+
 

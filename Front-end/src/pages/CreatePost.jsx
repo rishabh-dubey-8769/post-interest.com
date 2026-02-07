@@ -22,7 +22,7 @@ const CreatePost = () => {
         <form onSubmit={handleSubmit} >
             <input type="file" name="image" accept="image/*"  />
             <input type="text" name="caption" placeholder='Enter caption' required />
-            <Link to="/feed" ><button type="submit" className='btn-footer'>Submit</button></Link>
+            <button type="submit" ><Link to="/feed" >Submit</Link></button>
         </form>
         <Link to="/feed" ><button className='btn-footer'>See all Posts</button></Link>
     </section>
@@ -31,3 +31,4 @@ const CreatePost = () => {
 }
 
 export default CreatePost
+

@@ -39,9 +39,9 @@ const Feed = () => {
                         <div key={post._id} className='post-card' >
                             <img src={post.image} alt={post.caption} />
                             <p>{post.caption}</p>
-                            {/* <p>
+                            <p>
                                 Posted at: {new Date(post.createdAt).toLocaleString()}
-                            </p> */}
+                            </p> 
                         </div>
                     ))
                 ) : (
@@ -55,5 +55,6 @@ const Feed = () => {
 }
 
 export default Feed
+
 
 
